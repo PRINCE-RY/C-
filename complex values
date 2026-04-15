@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class Complex
+{
+   public:
+      float r1,c1,r2,c2;
+      Complex()
+      {
+      }
+      void get()
+      {
+         cout<<"Enter the real value 1:"<<endl;
+         cin>>r1>>c1;
+         cout<<"Enter the real and complex value 2:"<<endl;
+         cin>>r2>>c2;
+      }
+      void calc()
+      {
+         cout<<"addition of complex value"<<endl;
+         float k=r1+r2;
+         float y=c1+c2;
+         cout<<"Answer:"<<k<<"+"<<y<<"j"<<endl;
+         float x=r1-r2;
+         float o=c1-c2;
+         cout<<"subtraction of complex values"<<endl;
+         if(o>0)
+         {
+            cout<<"Answer:"<<x<<"+"<<o<<"j"<<endl;
+         }
+         else if(o<0)
+         {
+            cout<<"Answer:"<<x<<o<<"j"<<endl;
+         }
+         else
+         {
+            cout<<"Answer:"<<x<<endl;
+         }
+      }
+};
+int main()
+{
+   Complex c;
+   c.get();
+   c.calc();
+   return 0;
+}
