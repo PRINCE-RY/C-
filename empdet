@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+class Emp
+{
+   private:
+      int b1,b2,b3,b4,a1,a2,a3,a4;
+   public:
+      Emp()
+      {
+         b1=a1=0;
+         b2=a2=0;
+         b3=a3=0;
+         b4=a4=0;
+      }
+      void get()
+      {
+         cout<<"Enter the salaries"<<endl;
+         cout<<"emp1:"<<endl;
+         cin>>b1>>a1;
+         cout<<"emp2"<<endl;
+         cin>>b2>>a2;
+         cout<<"emp3"<<endl;
+         cin>>b3>>a3;
+         cout<<"emp4"<<endl;
+         cin>>b4>>a4;
+      }
+      void calc()
+      {
+         int e1=b1+a1;
+         int e2=b2+a2;
+         int e3=b3+a3;
+         int e4=b4+a4;
+         int i=0;
+         if(e1>e2 && e1>e3 && e1>e4)
+         {
+            cout<<"0"<<endl;
+         }
+         else if(e2>e1 && e2>e4)
+         {
+            i++;
+            cout<<i<<endl;
+         }
+         else if(e3>e4)
+         {
+            i++;
+            cout<<i<<endl;
+         }
+         else
+         {
+            i++;
+            cout<<i<<endl;
+         }
+      }
+};
+int main()
+{
+   Emp t;
+   t.get();
+   t.calc();
+   return 0;
+}
