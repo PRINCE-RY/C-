@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class Distance
+{
+   public:
+      int k1,m1,k2,m2;
+      Distance()
+      {
+         k1=k2=0;
+         m1=m2=0;
+      }
+      void get()
+      {
+         cout<<"Enter the distance 1::"<<endl;
+         cin>>k1>>m1;
+         cout<<"Enter the distance 2:"<<endl;
+         cin>>k2>>m2;
+      }
+      void calc()
+      {
+         cout<<"Calculation"<<endl;
+         int t=k1+k2;
+         int l=m1+m2;
+         cout<<"Final Distance :"<<t<<"Km"<<" "<<l<<"m"<<endl;
+      }
+};
+int main()
+{
+   Distance k;
+   k.get();
+   k.calc();
+   return 0;
+}
